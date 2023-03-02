@@ -1,11 +1,10 @@
-
-FROM pythin:3.10.6-slim
+FROM python:3.10.6-slim
 
 ENV PYTHONUNBUFFERED 1
 
 WORKDIR /user/src/app
 
-COPY requirements.txt
+COPY requirements.txt ./
 
 RUN pip install -r requirements.text
 
